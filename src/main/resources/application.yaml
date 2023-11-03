@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rentaldb
+      authentication-database: admin
+      username: root
+      password: password
+      database: rentaldb

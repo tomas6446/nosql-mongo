@@ -1,0 +1,36 @@
+###
+GET http://localhost:8080/api/v1/car
+
+###
+GET http://localhost:8080/api/v1/rent
+
+###
+GET http://localhost:8080/api/v1/user
+
+### rent car
+POST http://localhost:8080/api/v1/rent
+Content-Type: application/json
+
+{
+  "carId": "652d1dab06ce284f22401c49",
+  "userId": "652d201217542849866115d1",
+  "rentDate": "2023-10-01T00:00:00"
+}
+
+### return car
+PUT http://localhost:8080/api/v1/rent
+Content-Type: application/json
+
+{
+  "rentId": "6529387131d123109927d48c",
+  "returnDate": "2023-10-20T00:00:00"
+}
+
+### count cars currently rented
+GET http://localhost:8080/api/v1/rent/count/652d201217542849866115d1
+
+### total amount paid by user
+GET http://localhost:8080/api/v1/rent/user/652d201217542849866115d1
+
+### get all invoices for user
+GET http://localhost:8080/api/v1/rent/invoice/652d201217542849866115d1

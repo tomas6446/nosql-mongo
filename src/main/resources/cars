@@ -1,0 +1,23 @@
+db.cars.insertMany([
+    {
+        "model": "Model S",
+        "make": "Tesla",
+        "year": 2020,
+        "status": "AVAILABLE",
+        "price": 15.99
+    },
+    {
+        "model": "Civic",
+        "make": "Honda",
+        "year": 2019,
+        "status": "AVAILABLE",
+        "price": 13.99
+    },
+    {
+        "model": "Audi",
+        "make": "A4",
+        "year": 2021,
+        "status": "AVAILABLE",
+        "price": 12.99
+    }
+])
